@@ -42,7 +42,7 @@ export class ChatMessagesComponent implements OnInit {
   private createHubConnection() : HubConnection
   {
     return new HubConnectionBuilder()
-        .withUrl('http://localhost:5050/chat')
+        .withUrl('/chat')
         .build();
   }
 
